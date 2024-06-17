@@ -191,8 +191,8 @@ client.urgent           $urgent-bg-color    $urgent-bg-color   $text-color
 # Start i3bar to display a workspace bar (plus the system information i3status
 # finds out, if available)
 bar {
+    #status_command i3blocks
     status_command /home/jbernanos/.config/i3/bar.sh
-    #status_command i3status
 	colors {
 		background $bg-color
 	    separator #757575
@@ -203,7 +203,6 @@ bar {
 	}
 }
 
-#exec_always feh --bg-scale /home/jbernanos/Pictures/wallpaper.jpg
-#exec --no-startup-id feh --bg-fill /home/jbernanos/Pictures/wallpaper.jpg
+exec_always feh --bg-scale /home/jbernanos/Pictures/eteg/wallpaper.png
 
 bindsym $mod+Shift+x exec i3lock --color "$bg-color"
